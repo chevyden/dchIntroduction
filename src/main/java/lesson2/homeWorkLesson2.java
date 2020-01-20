@@ -109,35 +109,35 @@ public class homeWorkLesson2 {
         */
         System.out.println("Задание 6.");
 
-        int[][] arreyMulty = new int[3][3];// Создаём массив 3х3.
+        int[][] arreyMulti = new int[3][3];// Создаём массив 3х3.
 
 //          Вносим зачения строк массива:
-        arreyMulty[0] = new int[]{1, 2, 3};
-        arreyMulty[1] = new int[]{4, 5, 6};
-        arreyMulty[2] = new int[]{7, 8, 9};
+        arreyMulti[0] = new int[]{1, 2, 3};
+        arreyMulti[1] = new int[]{4, 5, 6};
+        arreyMulti[2] = new int[]{7, 8, 9};
 
 //          Выводим созданный массив в печать, преобразовав в "String":
         System.out.println("Созданный массив:");
-        System.out.println(Arrays.toString(arreyMulty[0]));
-        System.out.println(Arrays.toString(arreyMulty[1]));
-        System.out.println(Arrays.toString(arreyMulty[2]));
+        System.out.println(Arrays.toString(arreyMulti[0]));
+        System.out.println(Arrays.toString(arreyMulti[1]));
+        System.out.println(Arrays.toString(arreyMulti[2]));
 
 //          Вносим новые значения в ячейки массива:
-        arreyMulty[0][0] = 9;
-        arreyMulty[0][1] = 8;
-        arreyMulty[0][2] = 7;
-        arreyMulty[1][0] = 6;
-        arreyMulty[1][1] = 5;
-        arreyMulty[1][2] = 4;
-        arreyMulty[2][0] = 3;
-        arreyMulty[2][1] = 2;
-        arreyMulty[2][2] = 1;
+        arreyMulti[0][0] = 9;
+        arreyMulti[0][1] = 8;
+        arreyMulti[0][2] = 7;
+        arreyMulti[1][0] = 6;
+        arreyMulti[1][1] = 5;
+        arreyMulti[1][2] = 4;
+        arreyMulti[2][0] = 3;
+        arreyMulti[2][1] = 2;
+        arreyMulti[2][2] = 1;
 
 //          Выводим массив с измененными значениями в печать, преобразовав в "String":
         System.out.println("Изменённый массив:");
-        System.out.println(Arrays.toString(arreyMulty[0]));
-        System.out.println(Arrays.toString(arreyMulty[1]));
-        System.out.println(Arrays.toString(arreyMulty[2]));
+        System.out.println(Arrays.toString(arreyMulti[0]));
+        System.out.println(Arrays.toString(arreyMulti[1]));
+        System.out.println(Arrays.toString(arreyMulti[2]));
 
 
     }
