@@ -2,7 +2,7 @@ package lesson2;
 
 public class homeWorkLesson2 {
     public static void main(String[] args) {
-/* 1. Создать переменную = 1 и используя инкремент и декремент напечатать:
+        /* 1. Создать переменную = 1 и используя инкремент и декремент напечатать:
 
         1
         0
@@ -13,35 +13,52 @@ public class homeWorkLesson2 {
         1
         1
 */
-//        int var = 1;
-//
-//        System.out.println(var); // = 1
-//        System.out.println(--var); // = 0
-//        System.out.println(++var); // = 1
-//        System.out.println(var--); // = 1
-//        System.out.println(++var); // = 1
-//        System.out.println(++var); // = 2
-//        System.out.println(--var); // = 1
-//        System.out.println(var); // = 1
+        int var = 1;
 
-/*2. Условно создать таблицу из столбцов и строк всех 8 примитивов и выполнить преобразование один к другому.
-Пометить "а" - автоматическое(неявное) / "пт" - приведение типов(явное) / "х" - там где невозможно приведение выполнить.
-*/
+        System.out.println(var); // = 1
+        System.out.println(--var); // = 0
+        System.out.println(++var); // = 1
+        System.out.println(var--); // = 1
+        System.out.println(++var); // = 1
+        System.out.println(++var); // = 2
+        System.out.println(--var); // = 1
+        System.out.println(var); // = 1
 
-        byte varByte = 10;
-        short varShort = 2500;
-        char varChar = 'c';
-        int varInt = 70;
-        long varLong = 37890;
-        float varFloat = 2.345f;
-        double varDoub = 5.678;
-        boolean varBool = false;
+// TODO: 2. Условно создать таблицу из столбцов и строк всех 8 примитивов и выполнить преобразование один к другому.
+/** Пометить "а" - автоматическое(неявное) /
+ * "пт" - приведение типов(явное) /
+ * "х" - там где невозможно приведение выполнить.
+ */
 
+        /*3. Создать 3 целочисленных и 3 дробных переменных,
+выполнить несколько неявных преобразований и вывести сумму всех 6 переменных преобразовав к строке(тип String);
+ */
 
+        byte varByte1 = 16;
+        int varInt1 = 100;
+        long varLong1 = 500;
+        float varFloat1 = 1.1234f;
+        double varDoub1 = 2.456;
+        double varDoub2 = 9.7632;
 
-//        double d = 3.4;
-//        int e= (int) d;
-//
-//        System.out.println(e);
+        varLong1 = varInt1 = varByte1;
+        varDoub1 = varFloat1;
+        double varDoubRes = varByte1 + varInt1 + varLong1 + varFloat1 + varDoub1 + varDoub2;
+
+        String print = Double.toString(varDoubRes);
+        System.out.println(print);
+//TODO: 4. Создавать комментарии всех рассмотренных видов хотя бы по одному примеру;
+        /*5. Создать одномерный массив любого размера. Записать в него 10 примитивов.
+Значение в ячейках, индекс которых имеет нечетное значение, увеличить вдвое.
+Значение в ячейках, индекс которых имеет четное значение, уменьшить на 2.
+Вывести значение массива до изменения и после для сравнения результата.
+         */
+
+        /*
+        6. Создайте многомерный массив, в котором будет 3 строки и 3 столбца. Запишите в него числа от 1 до 9.
+Выполните с данным массивом определенные действия, чтобы числа хранились от 9 до 1.
+Выведите результат до и после изменения многомерного массива.
+         */
+
     }
 }
