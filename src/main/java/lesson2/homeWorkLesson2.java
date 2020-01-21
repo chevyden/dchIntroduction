@@ -85,10 +85,21 @@ public class homeWorkLesson2 {
         */
         System.out.println("Задание 5.");
 
-        int[] arreyInt = new int[]//создание одномерного массива
-                {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};//запись значений примитивов int
+        int[] arreyInt = new int[10]; //создание одномерного массива
+//                {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};//запись значений примитивов int
+        arreyInt[0] = 10;
+        arreyInt[1] = 20;
+        arreyInt[2] = 30;
+        arreyInt[3] = 40;
+        arreyInt[4] = 50;
+        arreyInt[5] = 60;
+        arreyInt[6] = 70;
+        arreyInt[7] = 80;
+        arreyInt[8] = 90;
+        arreyInt[9] = 100;
 
-        System.out.println(Arrays.toString(arreyInt) + " - Заданный масив."); //вывод заданного массива
+
+        System.out.println(Arrays.toString(arreyInt) + " - Массив до изменения."); //вывод заданного массива
 
         arreyInt[0] -= 2; //изменение значения ячейки с присвоением = arreyInt[0] - 2
         arreyInt[1] *= 2; //изменение значения ячейки с присвоением = arreyInt[1] * 2
@@ -101,7 +112,7 @@ public class homeWorkLesson2 {
         arreyInt[8] -= 2;
         arreyInt[9] *= 2;
 
-        System.out.println(Arrays.toString(arreyInt) + " - Изменённый масив."); //вывод изменённого массива
+        System.out.println(Arrays.toString(arreyInt) + " - Массив после изменения."); //вывод изменённого массива
 
         /*6. Создайте многомерный массив, в котором будет 3 строки и 3 столбца. Запишите в него числа от 1 до 9.
         Выполните с данным массивом определенные действия, чтобы числа хранились от 9 до 1.
@@ -117,7 +128,7 @@ public class homeWorkLesson2 {
         arreyMulti[2] = new int[]{7, 8, 9};
 
 //          Выводим созданный массив в печать, преобразовав в "String":
-        System.out.println("Созданный массив:");
+        System.out.println("Созданный массив до изменения:");
         System.out.println(Arrays.toString(arreyMulti[0]));
         System.out.println(Arrays.toString(arreyMulti[1]));
         System.out.println(Arrays.toString(arreyMulti[2]));
