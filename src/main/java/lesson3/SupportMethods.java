@@ -23,9 +23,9 @@ public class SupportMethods {
         Scanner stringInfo = new Scanner(System.in);
         String inLineInfo = stringInfo.nextLine();
         return inLineInfo;
-
     }
-//                   Метод "Лотерея"
+
+//                          Метод "Лотерея"
     public int surprise() {
         Scanner numbOfMembers = new Scanner(System.in);
         int numberOfMembers = numbOfMembers.nextInt();
@@ -49,22 +49,4 @@ public class SupportMethods {
     }
 
 
-//                                Help Me Math Methods.
-
-    public int calcPlus(int first, int second, int third) {
-        return first + second + third;
-    }
-
-    public int calcMinus(int first, int second, int third) {
-        return first - second - third;
-
-    }
-    public static double calcDiv(double firstDoub, double secondDoub, double thirdDoub) {
-       return  firstDoub / secondDoub/ thirdDoub;
-
-    }
-    public static double calcMultiplic(double firstDoub, double secondDoub, double thirdDoub) {
-        return firstDoub * secondDoub * thirdDoub;
-
-    }
 }
