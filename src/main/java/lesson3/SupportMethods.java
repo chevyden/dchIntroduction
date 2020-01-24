@@ -8,21 +8,18 @@ public class SupportMethods {
 //                          Опросчик для Задания №1.
     public String interrogatorString() {
         Scanner stringInfo = new Scanner(System.in);
-        String inStringInfo = stringInfo.next();
-        return inStringInfo;
+        return stringInfo.next();
 
     }
 
     public int interrogatorInt() {
         Scanner stringInfo = new Scanner(System.in);
-        int inIntInfo = stringInfo.nextInt();
-        return inIntInfo;
+        return stringInfo.nextInt();
 
     }
     public String interrogatorLine() {
         Scanner stringInfo = new Scanner(System.in);
-        String inLineInfo = stringInfo.nextLine();
-        return inLineInfo;
+        return stringInfo.nextLine();
     }
 
 //                          Метод "Лотерея"
@@ -30,22 +27,19 @@ public class SupportMethods {
         Scanner numbOfMembers = new Scanner(System.in);
         int numberOfMembers = numbOfMembers.nextInt();
         Random random = new Random();
-        int winner = random.nextInt(numberOfMembers) + 1;//исключаем 0.
-        return winner;
+        return random.nextInt(numberOfMembers) + 1;//исключаем 0.
     }
 
 //                         Генератор зарплаты методом Random))
     public int salaryRand() {
         Random salaryR = new Random();
-        int mySalaryR = (salaryR.nextInt(10001) + 40000);// от 40000 грн до 50000 грн включительно.
-        return mySalaryR;
+        return (salaryR.nextInt(10001) + 40000);// от 40000 грн до 50000 грн включительно.
     }
 
 //                         Генератор зарплаты методом Math.Random))
 
     public int salaryMathRand() {
-        int salaryMathR = (int) (Math.random() * 10001) + 40000;// от 40000 грн до 50000 грн включительно.
-        return salaryMathR;
+        return (int) (Math.random() * 10001) + 40000;// от 40000 грн до 50000 грн включительно.
     }
 
 
