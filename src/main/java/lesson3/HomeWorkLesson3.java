@@ -49,30 +49,30 @@ ps: Можно оформить как в классе Main, так и в отд
         System.out.println(askMail + " " + myMail);
         System.out.println(askAbout + " " + aboutMysel);
 
-////        Реализация в отделном классе"SupportMethods".
-//        SupportMethods askMe = new SupportMethods();
-//
-//        System.out.println(askName);
-//        String myNameIs = askMe.interrogatorString();
-//
-//        System.out.println(askSurname);
-//        String mySurameIs = askMe.interrogatorString();
-//
-//        System.out.println(askAge);
-//        int myAgeIs = askMe.interrogatorInt();
-//
-//        System.out.println(askMail);
-//        String myMailIs = askMe.interrogatorString();
-//
-//        System.out.println(askAbout);
-//        String aboutMyself = askMe.interrogatorLine();
-//
-//        System.out.println("Вы ввели следуюую информацию о себе:");
-//        System.out.println(askName + " " + myNameIs);
-//        System.out.println(askSurname + " " + mySurameIs);
-//        System.out.println(askAge + " " + myAgeIs);
-//        System.out.println(askMail + " " + myMailIs);
-//        System.out.println(askAbout + " " + aboutMyself);
+//        Реализация в отделном классе"SupportMethods".
+        SupportMethods askMe = new SupportMethods();
+
+        System.out.println(askName);
+        String myNameIs = askMe.interrogatorString();
+
+        System.out.println(askSurname);
+        String mySurameIs = askMe.interrogatorString();
+
+        System.out.println(askAge);
+        int myAgeIs = askMe.interrogatorInt();
+
+        System.out.println(askMail);
+        String myMailIs = askMe.interrogatorString();
+
+        System.out.println(askAbout);
+        String aboutMyself = askMe.interrogatorLine();
+
+        System.out.println("Вы ввели следуюую информацию о себе:");
+        System.out.println(askName + " " + myNameIs);
+        System.out.println(askSurname + " " + mySurameIs);
+        System.out.println(askAge + " " + myAgeIs);
+        System.out.println(askMail + " " + myMailIs);
+        System.out.println(askAbout + " " + aboutMyself);
 
 /*
 2. Создайте 3 переменные типа int и 3 переменные типа double используя класс Random,
@@ -129,6 +129,7 @@ Random определить победителя и вывести поздра�
 Для себя поймите разницу в использовании. Если не хотите получать маленькую зарплату, то можете выполнить дополнительные
 действия с Math.random)
 */
+
         System.out.println("Задание 5.");
 
         SupportMethods sal = new SupportMethods();
@@ -180,7 +181,6 @@ Random определить победителя и вывести поздра�
 
 
     }
-
 
 }
 
