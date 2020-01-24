@@ -133,8 +133,8 @@ Random определить победителя и вывести поздра�
 
         SupportMethods sal = new SupportMethods();
 
-        System.out.println(sal.salaryRand() + " - Зарплата методом Random");
-        System.out.println(sal.salaryMathRand() + " - Зарплата методом Math.Random");
+        System.out.println(sal.salaryRand() + " грн." + " - Зарплата методом Random");
+        System.out.println(sal.salaryMathRand() + " грн." + " - Зарплата методом Math.Random");
 
 /*
 6. Создайте класс “Employee”, у которого будет три переменные: double:“salary”, String:“position”, int:”age”.
