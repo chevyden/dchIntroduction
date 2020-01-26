@@ -49,7 +49,7 @@ public class HomeWorkLesson4 {
         int[] arreyNumbMaxValue = new int[]{901, -5, 56, -12, -9001, -0, -32, -12, -34, -56};
         int maxValue = arreyNumbMaxValue[0]; //Создаем переменную для циклической проверки чисел.
 
-        for (int i = 0; i <arreyNumbMaxValue.length ; i++) {
+        for (int i = 0; i < arreyNumbMaxValue.length; i++) {
             if (maxValue <= arreyNumbMaxValue[i]) {
                 maxValue = arreyNumbMaxValue[i];
             }
@@ -60,11 +60,11 @@ public class HomeWorkLesson4 {
         6. Дано 10 чисел. Напечатайте наименьшее из них в консоль, используя циклические и условные операторы.
 */
         System.out.println("Задание 6.(Наименьшее значение).");
-         //Создаем массив из 10-ти чисел:
+        //Создаем массив из 10-ти чисел:
         int[] arreyNumbMinValue = new int[]{901, -5, -56, 0, -9001, 1, -32, 12, -34, 56};
         int minValue = arreyNumbMinValue[0]; //Создаем переменную для циклической проверки чисел.
 
-        for (int i = 0; i <arreyNumbMinValue.length ; i++) {
+        for (int i = 0; i < arreyNumbMinValue.length; i++) {
             if (minValue >= arreyNumbMinValue[i]) {
                 minValue = arreyNumbMinValue[i];
             }
@@ -90,7 +90,7 @@ public class HomeWorkLesson4 {
         3 - не четное число
         ...
 */
-             System.out.println("Задание 8.(четное/не четное).");
+        System.out.println("Задание 8.(четное/не четное).");
         int[] arreyNumbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         for (int i = 0; i < 10; i += 2) {
             System.out.println(arreyNumbers[i] + " - не четное число");
@@ -115,14 +115,14 @@ public class HomeWorkLesson4 {
 
     private static void soutNumbersFrom1To10ByFor() {
         for (int i = 1; i < 11; i++) {
-            System.out.print(i + ", ");
+            System.out.print(i + " ");
         }
     }
 
     private static void soutNuberFrom1To10ByWhile() {
         int number = 1;
         while (number <= 10) {
-            System.out.print(number + ", ");
+            System.out.print(number + " ");
             number++;
         }
     }
