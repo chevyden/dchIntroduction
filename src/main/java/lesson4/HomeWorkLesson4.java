@@ -7,43 +7,46 @@ public class HomeWorkLesson4 {
         Пример: 1 2 3 4 5 6 7 8 9 10
         Реализовать в отдельном методе.
 */
-        System.out.println("Задание 1.");
+        System.out.println("Задание 1.(Цикл while).");
         soutNuberFrom1To10ByWhile();
 
-        System.out.println("");
+        System.out.println("");  //вывод пустой строки
 
 /*
         2. Вывести на экран числа от 1 до 10 используя for.
         Пример: 1 2 3 4 5 6 7 8 9 10
         Реализовать в отдельном методе.
 */
-        System.out.println("Задание 2.");
+        System.out.println("Задание 2.(Цикл for.)");
         soutNumbersFrom1To10ByFor();
 
-        System.out.println("");
+        System.out.println("");  //вывод пустой строки
 /*
         3. Вывести на экран числа в порядке уменьшения от 100 до 0 с шагом в 10 единиц. Использовать while.
         Пример: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 0
         Реализовать в отдельном методе.
 */
-        System.out.println("Задание 3.");
+        System.out.println("Задание 3.(Цикл while.)");
         soutNumbersDecreaseStep10ByWhile();
-        System.out.println("");
+
+        System.out.println("");    //вывод пустой строки
 
 /*
         4. Вывести на экран числа в порядке уменьшения от 100 до 0 с шагом в 10 единиц. Использовать for.
         Пример: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 0
         Реализовать в отдельном методе.
 */
-        System.out.println("Задание 4.");
+        System.out.println("Задание 4.(Цикл for.)");
         soutNumbersDecreaseStep10ByFor();
-        System.out.println("");
+
+        System.out.println("");     //вывод пустой строки
 
 /*
         5. Дано 10 чисел. Напечатайте наибольшее из них в консоль, используя циклические и условные операторы.
 */
+        System.out.println("Задание 5.(Наибольшое значение).");
         //Создаем массив из 10-ти чисел:
-        int[] arreyNumbMaxValue = new int[]{-901, -5, -56, -12, -9001, -1, -32, -12, -34, -56};
+        int[] arreyNumbMaxValue = new int[]{901, -5, 56, -12, -9001, -0, -32, -12, -34, -56};
         int maxValue = arreyNumbMaxValue[0]; //Создаем переменную для циклической проверки чисел.
 
         for (int i = 0; i <arreyNumbMaxValue.length ; i++) {
@@ -56,13 +59,14 @@ public class HomeWorkLesson4 {
 /*
         6. Дано 10 чисел. Напечатайте наименьшее из них в консоль, используя циклические и условные операторы.
 */
+        System.out.println("Задание 6.(Наименьшее значение).");
          //Создаем массив из 10-ти чисел:
-        int[] arreyNumbersMinValue = new int[]{-901, -5, -56, -12, -9001, -1, -32, -12, -34, -56};
-        int minValue = arreyNumbersMinValue[0]; //Создаем переменную для циклической проверки чисел.
+        int[] arreyNumbMinValue = new int[]{901, -5, -56, 0, -9001, 1, -32, 12, -34, 56};
+        int minValue = arreyNumbMinValue[0]; //Создаем переменную для циклической проверки чисел.
 
-        for (int i = 0; i <arreyNumbersMinValue.length ; i++) {
-            if (minValue >= arreyNumbersMinValue[i]) {
-                minValue = arreyNumbersMinValue[i];
+        for (int i = 0; i <arreyNumbMinValue.length ; i++) {
+            if (minValue >= arreyNumbMinValue[i]) {
+                minValue = arreyNumbMinValue[i];
             }
         }
         System.out.println(minValue);
@@ -70,6 +74,7 @@ public class HomeWorkLesson4 {
         7. Создайте переменную равную 5. Используя один из циклических оператор, напечатайте “Hillel the Best”
         пока созданная переменная меньше 0. Текст необходимо чтобы вывелся только один раз.
 */
+        System.out.println("Задание 7.");
         int varHillel = 5;
         do {
             System.out.println("Hillel the Best");
@@ -85,7 +90,7 @@ public class HomeWorkLesson4 {
         3 - не четное число
         ...
 */
-
+             System.out.println("Задание 8.(четное/не четное).");
         int[] arreyNumbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         for (int i = 0; i < 10; i += 2) {
             System.out.println(arreyNumbers[i] + " - не четное число");
@@ -111,7 +116,6 @@ public class HomeWorkLesson4 {
     private static void soutNumbersFrom1To10ByFor() {
         for (int i = 1; i < 11; i++) {
             System.out.print(i + ", ");
-
         }
     }
 
