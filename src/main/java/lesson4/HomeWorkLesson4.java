@@ -46,11 +46,11 @@ public class HomeWorkLesson4 {
 */
         System.out.println("Задание 5.(Наибольшое значение).");
         //Создаем массив из 10-ти чисел:
-        int[] arreyNumbMaxValue = new int[]{-901, 5, 56, -12, -9001, -0, -32, -12, -34, -56};
+        int[] arreyNumbMaxValue = new int[]{901, -5, 56, 12, 9001, 0, -32, 12, -34, -56};
         int maxValue = arreyNumbMaxValue[0]; //Создаем переменную для циклической проверки чисел.
 
-        for (int i = 0; i < arreyNumbMaxValue.length; i++) {
-            if (maxValue <= arreyNumbMaxValue[i]) {
+        for (int i = 1; i < arreyNumbMaxValue.length; i++) {
+            if (maxValue < arreyNumbMaxValue[i]) {
                 maxValue = arreyNumbMaxValue[i];
             }
         }
@@ -61,11 +61,11 @@ public class HomeWorkLesson4 {
 */
         System.out.println("Задание 6.(Наименьшее значение).");
         //Создаем массив из 10-ти чисел:
-        int[] arreyNumbMinValue = new int[]{901, -5, -56, 0, -9001, 1, -32, 12, -34, 56};
+        int[] arreyNumbMinValue = new int[]{-901, -5, -56, 0, -9001, -1, -32, 12, -34, 56};
         int minValue = arreyNumbMinValue[0]; //Создаем переменную для циклической проверки чисел.
 
-        for (int i = 0; i < arreyNumbMinValue.length; i++) {
-            if (minValue >= arreyNumbMinValue[i]) {
+        for (int i = 1; i < arreyNumbMinValue.length; i++) {
+            if (minValue > arreyNumbMinValue[i]) {
                 minValue = arreyNumbMinValue[i];
             }
         }
@@ -92,14 +92,25 @@ public class HomeWorkLesson4 {
 */
         System.out.println("Задание 8.(четное/не четное).");
         int[] arreyNumbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for (int i = 0; i < 10; i += 2) {
-            System.out.println(arreyNumbers[i] + " - не четное число");
-            System.out.println(arreyNumbers[i + 1] + " - четное число");
+        
+//        //Такая реализация работает только со строгим и заведомо известным порядком чисел в массиве:
+//        for (int i = 0; i < 10; i += 2) {
+//            System.out.println(arreyNumbers[i] + " - не четное число");
+//            System.out.println(arreyNumbers[i + 1] + " - четное число");
+
+        //А эта реализация работает с любым порядком чисел в массиве:
+        for (int i = 0; i < 10; i++) {
+            if (arreyNumbers[i] % 2 == 0) {
+                System.out.println(arreyNumbers[i] + " - четное число");
+            } else {
+                System.out.println(arreyNumbers[i] + " - не четное число");
+            }
         }
     }
 
-    /** Метод возврата чисел по убыванию от 100 до 0 с шагом 10
-     *  и применением циклического оператора for.
+    /**
+     * Метод возврата чисел по убыванию от 100 до 0 с шагом 10
+     * и применением циклического оператора for.
      */
     private static void soutNumbersDecreaseStep10ByFor() {
         for (int i = 100; i >= 0; i -= 10) {
@@ -107,8 +118,9 @@ public class HomeWorkLesson4 {
         }
     }
 
-    /** Метод возврата чисел по убыванию от 100 до 0 с шагом 10
-     *  и применением циклического оператора while.
+    /**
+     * Метод возврата чисел по убыванию от 100 до 0 с шагом 10
+     * и применением циклического оператора while.
      */
     private static void soutNumbersDecreaseStep10ByWhile() {
         int number = 100;
@@ -117,8 +129,10 @@ public class HomeWorkLesson4 {
             number -= 10;
         }
     }
-    /** Метод возврата чисел по возрастанию от 1 до 10
-     *  с применением циклического оператора for.
+
+    /**
+     * Метод возврата чисел по возрастанию от 1 до 10
+     * с применением циклического оператора for.
      */
     private static void soutNumbersFrom1To10ByFor() {
         for (int i = 1; i < 11; i++) {
@@ -126,8 +140,9 @@ public class HomeWorkLesson4 {
         }
     }
 
-    /** Метод возврата чисел по возрастанию от 1 до 10
-     *  с применением оператора while.
+    /**
+     * Метод возврата чисел по возрастанию от 1 до 10
+     * с применением оператора while.
      */
     private static void soutNuberFrom1To10ByWhile() {
         int number = 1;
