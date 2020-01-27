@@ -42,11 +42,11 @@ public class HomeWorkLesson4 {
         System.out.println("");     //вывод пустой строки
 
 /*
-        5. Дано 10 чисел. Напечатайте наибольшее из них в консоль, используя циклические и условные операторы.
+        5. Дано 10 чисел (возможно массив). Напечатайте наибольшее из них в консоль, используя циклические и условные операторы.
 */
         System.out.println("Задание 5.(Наибольшое значение).");
         //Создаем массив из 10-ти чисел:
-        int[] arreyNumbMaxValue = new int[]{901, -5, 56, -12, -9001, -0, -32, -12, -34, -56};
+        int[] arreyNumbMaxValue = new int[]{-901, 5, 56, -12, -9001, -0, -32, -12, -34, -56};
         int maxValue = arreyNumbMaxValue[0]; //Создаем переменную для циклической проверки чисел.
 
         for (int i = 0; i < arreyNumbMaxValue.length; i++) {
@@ -57,7 +57,7 @@ public class HomeWorkLesson4 {
         System.out.println(maxValue);
 
 /*
-        6. Дано 10 чисел. Напечатайте наименьшее из них в консоль, используя циклические и условные операторы.
+        6. Дано 10 чисел (возможно массив). Напечатайте наименьшее из них в консоль, используя циклические и условные операторы.
 */
         System.out.println("Задание 6.(Наименьшее значение).");
         //Создаем массив из 10-ти чисел:
@@ -98,13 +98,18 @@ public class HomeWorkLesson4 {
         }
     }
 
-
+    /** Метод возврата чисел по убыванию от 100 до 0 с шагом 10
+     *  и применением циклического оператора for.
+     */
     private static void soutNumbersDecreaseStep10ByFor() {
         for (int i = 100; i >= 0; i -= 10) {
             System.out.print(i + ", ");
         }
     }
 
+    /** Метод возврата чисел по убыванию от 100 до 0 с шагом 10
+     *  и применением циклического оператора while.
+     */
     private static void soutNumbersDecreaseStep10ByWhile() {
         int number = 100;
         while (number >= 0) {
@@ -112,13 +117,18 @@ public class HomeWorkLesson4 {
             number -= 10;
         }
     }
-
+    /** Метод возврата чисел по возрастанию от 1 до 10
+     *  с применением циклического оператора for.
+     */
     private static void soutNumbersFrom1To10ByFor() {
         for (int i = 1; i < 11; i++) {
             System.out.print(i + " ");
         }
     }
 
+    /** Метод возврата чисел по возрастанию от 1 до 10
+     *  с применением оператора while.
+     */
     private static void soutNuberFrom1To10ByWhile() {
         int number = 1;
         while (number <= 10) {
