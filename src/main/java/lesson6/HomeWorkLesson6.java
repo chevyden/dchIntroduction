@@ -1,6 +1,6 @@
 package lesson6;
 
-import java.io.FileNotFoundException;
+
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -68,7 +68,6 @@ public class HomeWorkLesson6 {
         writeFile();
         checkRecordFile();
 
-
 /*
         4. Написать программу “registration”. Условия:
         о При запуске, программа должна просить задать логин и пароль;
@@ -79,7 +78,6 @@ public class HomeWorkLesson6 {
 */
 
         registration();
-
 
 /*
         5. Написать программу “login”. Условия:
@@ -111,10 +109,7 @@ public class HomeWorkLesson6 {
             if (i == 2) {
                 System.out.println("Повторите попытку позже.");
             }
-
         }
-
-
     }
 
 
