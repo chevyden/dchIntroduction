@@ -66,7 +66,7 @@ public class HomeWorkLesson6 {
 */
 
         writeFile();
-        checkRecordFile();
+        checkRecordPrintFile();
 
 /*
         4. Написать программу “registration”. Условия:
@@ -89,31 +89,11 @@ public class HomeWorkLesson6 {
 */
 
 
-//_______________________Получилась прога с костылями)))________________
-        //не будет работать корректно если:
-        //- пользователь введет неполный пароль
-        //- пользователь введет конец имени и начало пароля
-        //- если закончится строка в текстовом документе(?)
 
-        boolean check = logPassCheck();
-
-        for (int i = 0; i < 3; i++) {
-            if (check == false) {
-                System.out.println("Введите логин и пароль ещё раз.\nУ Вас осталось: " + (3 - i) + " шанc(а)");
-                check = logPassCheck();
-
-            } else {
-                System.out.println("Приветствуем Вас в системе!");
-                break;
-            }
-            if (i == 2) {
-                System.out.println("Повторите попытку позже.");
-            }
-        }
     }
 
 
-    private static void writeFile() throws IOException {
+    private static void writeFile () throws IOException {
         String filePoemsPath = "/home/dbhc/IdeaProjects/introduction/src/main/resources/lesson6/homeWorkLesson6/PoemsFile.txt";
         Path dirPath = Paths.get(filePoemsPath);
         if (!Files.exists(dirPath.getParent())) {
@@ -125,7 +105,7 @@ public class HomeWorkLesson6 {
     }
 
 
-    private static void checkRecordFile() throws IOException {
+    private static void checkRecordPrintFile () throws IOException {
         String filePoemsPath = "/home/dbhc/IdeaProjects/introduction/src/main/resources/lesson6/homeWorkLesson6/PoemsFile.txt";
         FileReader checkRecord = new FileReader(filePoemsPath);
         Scanner scanCheckRecord = new Scanner(checkRecord);
@@ -134,6 +114,7 @@ public class HomeWorkLesson6 {
 
         if (scanCheckRecord.hasNextLine() && StringForEqual.equals(scanCheckRecord.nextLine())) {
             System.out.println("Всё записано, нажмите 1 + ENTER для продожения или любую цифру + ENTER для выхода.");
+
             Scanner scanner = new Scanner(System.in);
             int scan = scanner.nextInt();
 
@@ -190,35 +171,12 @@ public class HomeWorkLesson6 {
         String userPassSecond = scanLogPass.next();
 
         if (userPassFirst.equals(userPassSecond)) {
-            fileRegistrationWriter.write(userName.concat(userPassSecond).concat(" "));
+            fileRegistrationWriter.write(userName + "\n" + userPassSecond + "\n");
         } else {
             System.out.println("Вы сделали ошибку. Попробуйте еще раз");
         }
 
         fileRegistrationWriter.close();
     }
-
-
-    private static boolean logPassCheck() throws IOException {
-        Scanner scanLogPass = new Scanner(System.in);
-        String fileLogPassPath = "/home/dbhc/IdeaProjects/introduction/src/main/resources/lesson6/homeWorkLesson6/users.txt";
-
-        System.out.println("Введите логин:");
-        String enterLog = scanLogPass.next();
-
-        System.out.println("Введите пароль:");
-        String enterPass = scanLogPass.next();
-
-        FileReader fileReader = new FileReader(fileLogPassPath);
-        Scanner scanLogPassUsers = new Scanner(fileReader);
-        String users = scanLogPassUsers.nextLine();
-
-        scanLogPassUsers.close();
-        fileReader.close();
-
-        boolean check = users.contains(enterLog.concat(enterPass));
-        return check;
-    }
-
 
 }
