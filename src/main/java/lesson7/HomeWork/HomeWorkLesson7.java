@@ -73,6 +73,8 @@ public class HomeWorkLesson7 {
         System.out.println(secondDog.getDogWeight());        // sout:12
         System.out.println(secondDog.toString());            // sout:Dog{name='Lora', breed='Husky', weight=12}
 
+
+
 //        System.out.println(thirdDog.equals(fourthDog));      // sout:false          //equals & hashCode
 //        thirdDog = fourthDog;
 //        System.out.println(thirdDog.toString());             // sout:Dog{name='Lisa', breed='Fox terrier', weight=5}
