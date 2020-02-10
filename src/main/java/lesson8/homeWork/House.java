@@ -1,16 +1,15 @@
 package lesson8.homeWork;
 
 public class House {
-    /*
-   3. Создайте класс House. Заполните Ваш новый дом “мебелью”(подсказка: отдельные классы), для примера
-   достаточно до 5 вещей. У каждой вещи также должно быть пару характеристик.
-    */
+/*
+3. Создайте класс House. Заполните Ваш новый дом “мебелью”(подсказка: отдельные классы), для примера
+достаточно до 5 вещей. У каждой вещи также должно быть пару характеристик.
+*/
     private Table tableInLivingRoom;
     private TvSet tvSetInLivingRoom;
     private Chair chairInLivingRoom;
     private Chair chairInDinnerRoom;
     private Bed bedInBedRoom;
-
 
     public House() {
     }
@@ -23,7 +22,6 @@ public class House {
         this.tableInLivingRoom = tableInLivingRoom;
         this.tvSetInLivingRoom = tvSetInLivingRoom;
     }
-
 
     public House(Table tableInLivingRoom, TvSet tvSetInLivingRoom, Chair chairInLivingRoom) {
         this.tableInLivingRoom = tableInLivingRoom;

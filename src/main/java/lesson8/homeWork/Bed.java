@@ -1,7 +1,5 @@
 package lesson8.homeWork;
 
-import java.util.Objects;
-
 public class Bed {
 
     private double length;

@@ -1,7 +1,5 @@
 package lesson8.homeWork;
 
-import java.util.Objects;
-
 public class Chair {
 
     private double height;
