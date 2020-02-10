@@ -16,7 +16,6 @@ public class Variables {
     private double variableDouble;
     private char variableChar;
     private boolean variableBoolean;
-
     private String variableString;
 
     public Variables() {
