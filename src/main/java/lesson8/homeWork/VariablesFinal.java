@@ -1,7 +1,6 @@
 package lesson8.homeWork;
 
 public final class VariablesFinal {
-
 /*
 2. Создайте класс с 3 параметрами final. Создайте в нем конструктор по-умолчанию и конструктор со всеми параметрами.
 Создайте для всех полей getter и setter.

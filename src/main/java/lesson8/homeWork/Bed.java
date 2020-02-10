@@ -1,7 +1,6 @@
 package lesson8.homeWork;
 
 public class Bed {
-
     private double length;
     private double width;
     private String manufacturer;

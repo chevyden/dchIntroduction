@@ -1,7 +1,6 @@
 package lesson8.homeWork;
 
 public class Chair {
-
     private double height;
     private String manufacturer;
     private String style;

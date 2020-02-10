@@ -1,7 +1,6 @@
 package lesson8.homeWork;
 
 public class Variables {
-
 /*
 1. Создайте новый класс, у которого должно быть 9 переменных (8 примитивов разного типа + String);
 Для каждой переменной напишите getter и setter;
