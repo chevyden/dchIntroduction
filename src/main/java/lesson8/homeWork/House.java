@@ -1,10 +1,10 @@
 package lesson8.homeWork;
 
 public class House {
-/*
-3. Создайте класс House. Заполните Ваш новый дом “мебелью”(подсказка: отдельные классы), для примера
-достаточно до 5 вещей. У каждой вещи также должно быть пару характеристик.
-*/
+    /*
+    3. Создайте класс House. Заполните Ваш новый дом “мебелью”(подсказка: отдельные классы), для примера
+    достаточно до 5 вещей. У каждой вещи также должно быть пару характеристик.
+    */
     private Table tableInLivingRoom;
     private TvSet tvSetInLivingRoom;
     private Chair chairInLivingRoom;
@@ -81,13 +81,12 @@ public class House {
 
     @Override
     public String toString() {
-        return "House{" +
-                "tableInLivingRoom=" + tableInLivingRoom +
-                ", tvSetInLivingRoom=" + tvSetInLivingRoom +
-                ", chairInLivingRoom=" + chairInLivingRoom +
-                ", chairInDinnerRoom=" + chairInDinnerRoom +
-                ", bedInBedRoom=" + bedInBedRoom +
-                '}';
+        return
+                "tableInLivingRoom=" + tableInLivingRoom + "\n" +
+                        "tvSetInLivingRoom=" + tvSetInLivingRoom + "\n" +
+                        "chairInLivingRoom=" + chairInLivingRoom + "\n" +
+                        "chairInDinnerRoom=" + chairInDinnerRoom + "\n" +
+                        "bedInBedRoom=" + bedInBedRoom;
     }
 
 }

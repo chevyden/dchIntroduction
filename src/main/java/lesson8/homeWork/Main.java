@@ -17,17 +17,15 @@ public class Main {
         firstHouse.setChairInLivingRoom(chairInLivingRoom);
 
         TvSet tvSetInLivingRoom = new TvSet(1.0916, 0.6346, "Samsung");
-        firstHouse.setTvSetInLivingRoom(tvSetInLivingRoom); //Сеттером вносим в Дом телевизор
+        firstHouse.setTvSetInLivingRoom(tvSetInLivingRoom);
 
         Chair chairInDinnerRoom = new Chair(0.6, "TEMP", "Modern");
         firstHouse.setChairInDinnerRoom(chairInDinnerRoom);
 
-        Bed bedInBedRoom = new Bed(2.2,2.0,"Veneto LTD");
+        Bed bedInBedRoom = new Bed(2.2, 2.0, "Veneto LTD");
         firstHouse.setBedInBedRoom(bedInBedRoom);
 
-        System.out.println("The first house has: " + "\n" + firstHouse.getTableInLivingRoom().toString()
-                + "\n" + firstHouse.getTvSetInLivingRoom().toString() + "\n" + firstHouse.getChairInLivingRoom().toString()
-                + "\n" + firstHouse.getChairInDinnerRoom().toString() + "\n" + firstHouse.getBedInBedRoom().toString());
+        System.out.println("The first house has: " + "\n" + firstHouse.toString());
 
     }
 }
