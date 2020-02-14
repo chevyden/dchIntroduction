@@ -16,6 +16,10 @@ public final class Admin extends User {
 
     }
 
+    public Admin(String name, String surname, String email, String password, String sex, String origin) {
+        super(name, surname, email, password, sex, origin);
+    }
+
     public void fileDeleter(boolean thereIs) throws IOException {
         String pathUserTextFile = "/home/dbhc/IdeaProjects/introduction/src/main/resources/lesson9/homeWorkLesson9/UserText.txt";
         Path textFilePath = Paths.get(pathUserTextFile);

@@ -13,6 +13,10 @@ public final class Support extends User {
     public Support() {
     }
 
+    public Support(String name, String surname, String email, String password, String sex, String origin) {
+        super(name, surname, email, password, sex, origin);
+    }
+
     public boolean checkStringInFile(String inputString) throws IOException {
         String pathUserTextFile = "/home/dbhc/IdeaProjects/introduction/src/main/resources/lesson9/homeWorkLesson9/UserText.txt";
         FileReader readUserTextFile = new FileReader(pathUserTextFile);

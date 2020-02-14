@@ -45,7 +45,11 @@ Admin = написать строку + проверить + удалить фа
 
 //  firstUser.writeTextConsoleInFile();   //разкоментировать для создания текстового файла, если его нет, и/или записи текста в файл.
 
-        checkUsers(fourthUser);
+//        checkUsers(firstUser);
+//        checkUsers(secondUser);
+        checkUsers(thirdUser);
+//        checkUsers(fourthUser);
+//        checkUsers(fifthUser);
 
     }
 
@@ -53,7 +57,7 @@ Admin = написать строку + проверить + удалить фа
 
         if (user instanceof User) {                    // условие будет срабатывать каждый раз, поскольку все объекты
             System.out.println("Instance of User");    //наследники класса User и являются экземплярами этого класса.
-//            inputString();                             //
+            inputString();                             //
         }
 
         if (user instanceof Support) {
