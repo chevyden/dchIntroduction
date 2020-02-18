@@ -55,14 +55,6 @@ public final class FirstGeneration extends Iphone {
     }
 
     @Override
-    public String toString() {
-        return "FirstGeneration{" +
-                "indexOfGeneration='" + indexOfGeneration + '\'' +
-                ", is3G=" + is3G +
-                "} " + super.toString();
-    }
-
-    @Override
     public void phonePrise() {
         System.out.println("Price - 99$");
     }
@@ -70,5 +62,13 @@ public final class FirstGeneration extends Iphone {
     @Override
     public void salePrise() {
         System.out.println("Sale price  - 90$");
+    }
+
+    @Override
+    public String toString() {
+        return "FirstGeneration{" +
+                "indexOfGeneration='" + indexOfGeneration + '\'' +
+                ", is3G=" + is3G +
+                "} " + super.toString();
     }
 }
