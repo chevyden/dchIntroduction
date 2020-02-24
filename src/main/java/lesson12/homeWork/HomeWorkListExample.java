@@ -2,7 +2,7 @@ package lesson12.homeWork;
 
 import java.util.LinkedList;
 
-public class HomeWork {
+public class HomeWorkListExample {
     public static void main(String[] args) {
         /*Выполните все пункты как одно решение задачи:
 1. Создайте 3 класса, в каждом из которых будет по одному методу с разным названием(Остальное не имеет значения);
