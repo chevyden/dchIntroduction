@@ -35,17 +35,14 @@ public class HomeWorkListExample {
     public static LinkedList addOrChangeObjects(LinkedList list) {
         if (list.isEmpty()) {
             for (int i = 0; i < 6; i++) {
-                FirstClass firstClassObject = new FirstClass();
-                list.add(i, firstClassObject);
+                list.add(i, new FirstClass());
             }
         }
             for (int i = 0; i < 3; i++) {
-                SecondClass secondClass = new SecondClass();
-                list.add(i, secondClass);
+                list.add(i, new SecondClass());
             }
             for (int i = list.size() - 3; i < list.size(); i++) {
-                ThirdClass thirdClass = new ThirdClass();
-                list.set(i, thirdClass);
+                list.set(i, new ThirdClass());
             }
 
         return list;

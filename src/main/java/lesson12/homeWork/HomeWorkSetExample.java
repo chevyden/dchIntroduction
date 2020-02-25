@@ -23,14 +23,12 @@ public class HomeWorkSetExample {
         Iterator iterator = set.iterator();
         if (set.isEmpty()) {
             for (int i = 0; i < 6; i++) {
-                FirstClass firstClass = new FirstClass();
-                set.add(firstClass);
+                set.add(new FirstClass());
             }
         }
 
         for (int i = 0; i < 3; i++) {
-            SecondClass secondClass = new SecondClass();
-            set.add(secondClass);
+            set.add(new SecondClass());
         }
 
         int counter = 0;
@@ -45,8 +43,7 @@ public class HomeWorkSetExample {
             }
         }
         for (int i = 0; i < 3; i++) {
-            ThirdClass thirdClass = new ThirdClass();
-            set.add(thirdClass);
+            set.add(new ThirdClass());
         }
         return set;
     }
