@@ -21,10 +21,12 @@ public class HomeWorkListExample {
         */
 
         LinkedList firstLinkedList = new LinkedList();
-        firstLinkedList = (LinkedList) addOrChangeObjects(firstLinkedList);
+        addOrChangeObjects(firstLinkedList);
         System.out.println(firstLinkedList.toString());
-        firstLinkedList = (LinkedList) checkObjects(firstLinkedList);
+
+        checkObjects(firstLinkedList);
         System.out.println(firstLinkedList.toString());
+
         callMethodForObjectAndClean(firstLinkedList);
         System.out.println("List: " + firstLinkedList.toString());
 
@@ -45,7 +47,6 @@ public class HomeWorkListExample {
                 list.set(i, thirdClass);
             }
         }
-
         return list;
     }
 
@@ -80,7 +81,6 @@ public class HomeWorkListExample {
         }
         return list;
     }
-
 
     public static void callMethodForObjectAndClean(LinkedList list) {
         for (Object o : list) {

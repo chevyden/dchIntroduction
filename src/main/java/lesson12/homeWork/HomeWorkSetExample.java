@@ -8,27 +8,30 @@ public class HomeWorkSetExample {
 
 
         HashSet firstSet = new HashSet();
-        System.out.println(firstSet.toString());
-        firstSet = addOrChengeObjects(firstSet);
+        addOrChangeObjects(firstSet);
         System.out.println(firstSet.toString());
 
-        firstSet = checkObjects(firstSet);
+        checkObjects(firstSet);
         System.out.println(firstSet.toString());
 
         callMethodForObjectAndClean(firstSet);
+        System.out.println(firstSet.toString());
 
     }
 
-    private static HashSet addOrChengeObjects(HashSet set) {
+    private static HashSet addOrChangeObjects(HashSet set) {
+        Iterator iterator = set.iterator();
         for (int i = 0; i < 6; i++) {
             FirstClass firstClass = new FirstClass();
             set.add(firstClass);
         }
+//        System.out.println(set.toString());
+
         for (int i = 0; i < 3; i++) {
             SecondClass secondClass = new SecondClass();
             set.add(secondClass);
+//            System.out.println(set.toString());
         }
-        Iterator iterator = set.iterator();
         int counter = 0;
         while (iterator.hasNext()) {
             Object o = iterator.next();
@@ -76,10 +79,8 @@ public class HomeWorkSetExample {
                 }
             }
         }
-
         return set;
 }
-
 
     public static void callMethodForObjectAndClean(HashSet set) {
         for (Object o : set) {
