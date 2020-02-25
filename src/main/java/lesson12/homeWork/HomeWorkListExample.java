@@ -38,6 +38,7 @@ public class HomeWorkListExample {
                 FirstClass firstClassObject = new FirstClass();
                 list.add(i, firstClassObject);
             }
+        }
             for (int i = 0; i < 3; i++) {
                 SecondClass secondClass = new SecondClass();
                 list.add(i, secondClass);
@@ -46,7 +47,7 @@ public class HomeWorkListExample {
                 ThirdClass thirdClass = new ThirdClass();
                 list.set(i, thirdClass);
             }
-        }
+
         return list;
     }
 

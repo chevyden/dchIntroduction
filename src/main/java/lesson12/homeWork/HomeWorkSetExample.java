@@ -21,17 +21,18 @@ public class HomeWorkSetExample {
 
     private static HashSet addOrChangeObjects(HashSet set) {
         Iterator iterator = set.iterator();
-        for (int i = 0; i < 6; i++) {
-            FirstClass firstClass = new FirstClass();
-            set.add(firstClass);
+        if (set.isEmpty()) {
+            for (int i = 0; i < 6; i++) {
+                FirstClass firstClass = new FirstClass();
+                set.add(firstClass);
+            }
         }
-//        System.out.println(set.toString());
 
         for (int i = 0; i < 3; i++) {
             SecondClass secondClass = new SecondClass();
             set.add(secondClass);
-//            System.out.println(set.toString());
         }
+
         int counter = 0;
         while (iterator.hasNext()) {
             Object o = iterator.next();
@@ -80,7 +81,7 @@ public class HomeWorkSetExample {
             }
         }
         return set;
-}
+    }
 
     public static void callMethodForObjectAndClean(HashSet set) {
         for (Object o : set) {
