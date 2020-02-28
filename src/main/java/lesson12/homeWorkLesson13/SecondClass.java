@@ -1,4 +1,4 @@
-package lesson12.homeWork;
+package lesson12.homeWorkLesson13;
 
 public class SecondClass {
     public void secondClassMethod() {
