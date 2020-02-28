@@ -1,9 +1,12 @@
 package lesson13.homeWorkLesson13;
 
-public class ThirdClass extends SecondClass {
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+public class ThirdClass extends SecondClass {
+    private LinkedList<String> linkedListThirdClass;
+    private HashSet<String> hashSetThirdClass;
+    private HashMap<Integer, Boolean> hashMapThirdClass;
+
 }

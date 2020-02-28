@@ -1,13 +1,10 @@
 package lesson13.homeWorkLesson13;
 
-import lesson9.ClassWork1102.Animal;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
 
 public class HomeWorkLesson13Task1 extends UserData {
     /*

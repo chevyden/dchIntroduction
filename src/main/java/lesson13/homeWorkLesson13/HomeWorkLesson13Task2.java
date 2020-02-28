@@ -1,8 +1,6 @@
 package lesson13.homeWorkLesson13;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedList;
 
 public class HomeWorkLesson13Task2 {
@@ -18,45 +16,21 @@ public class HomeWorkLesson13Task2 {
     */
 
     public static void main(String[] args) {
-        FirstClass firstClassObject = new FirstClass();
-        firstClassObject.setLinkedListFirstClass(new LinkedList<>());
-        firstClassObject.setHashSetFirstClass(new HashSet<>());
-        firstClassObject.setHashMapFirstClass(new HashMap<>());
-        firstClassObject.getLinkedListFirstClass().add(0, "1111");
-        firstClassObject.getLinkedListFirstClass().add(1, "2222");
-        firstClassObject.getHashSetFirstClass().add("one");
-        firstClassObject.getHashSetFirstClass().add("two");
-        firstClassObject.getHashMapFirstClass().put("first", 1.1);
-        firstClassObject.getHashMapFirstClass().put("second", 2.2);
+        LinkedList<ThirdClass> thirdClassLinkedList = new LinkedList<>();
+        thirdClassLinkedList.add(0, null);
+        thirdClassLinkedList.add(1, new ThirdClass());
 
-        System.out.println(firstClassObject.toString());
+        HashSet<FirstClass> firstClassHashSet = new HashSet<>();
+        firstClassHashSet.add(new FirstClass());
 
-        SecondClass secondClassObject = new SecondClass();
-        secondClassObject.setLinkedListFirstClass(new LinkedList<>());
-        secondClassObject.setHashSetFirstClass(new HashSet<>());
-        secondClassObject.setHashMapFirstClass(new HashMap<>());
-        System.out.println(secondClassObject.toString());
-
-        ThirdClass thirdClassObject = new ThirdClass();
-        thirdClassObject.setLinkedListFirstClass(new LinkedList<>());
-        thirdClassObject.setHashSetFirstClass(new HashSet<>());
-        thirdClassObject.setHashMapFirstClass(new HashMap<>());
-        System.out.println(thirdClassObject.toString());
-
-//        reloadCollections(thirdClassObject.getLinkedListFirstClass(),firstClassObject.getHashSetFirstClass());
-
+        loadToCollections(thirdClassLinkedList, firstClassHashSet);
     }
 
-    public static HashSet reloadCollections(LinkedList <? extends SecondClass> linkedList ,
+    public static void loadToCollections(LinkedList<? extends SecondClass> linkedList,
                                          HashSet<? super SecondClass> hashSet) {
-        Iterator objectIterator = hashSet.iterator();
-        while (objectIterator.hasNext()) {
-            objectIterator.remove();           //TODO: iterator.next.remove!!!!!!
-        }
+
         for (int i = 0; i < linkedList.size(); i++) {
-            linkedList.get(i);
             hashSet.add(linkedList.get(i));
         }
-        return hashSet;
     }
 }

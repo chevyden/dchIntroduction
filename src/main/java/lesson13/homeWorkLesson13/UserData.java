@@ -13,9 +13,7 @@ public class UserData {
     private String country;
     private String email;
     private Integer age;
-
     private HashMap<String, Object> user = new HashMap<>();
-    private HashMap<String, HashMap<String, Object>> usersInfoHashMap = new HashMap<>();
 
     public UserData() {
     }
@@ -47,8 +45,8 @@ public class UserData {
     }
 
     public HashMap<String, HashMap<String, Object>> setUserByName(String name, HashMap<String, Object> user) {
+        HashMap<String, HashMap<String, Object>> usersInfoHashMap = new HashMap<>();
         usersInfoHashMap.put(name, user);
-
         return usersInfoHashMap;
     }
 }
