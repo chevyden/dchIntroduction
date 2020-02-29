@@ -1,4 +1,4 @@
-package lesson12.homeWorkLesson13;
+package lesson12.homeWorkLesson12;
 
 public class FirstClass {
 
