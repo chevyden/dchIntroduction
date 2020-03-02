@@ -5,8 +5,14 @@ import java.nio.file.FileAlreadyExistsException;
 import java.rmi.server.ExportException;
 
 public class CallExceptionMethodsClass {
-    //будет также три промежуточных метода, которые просто будут вызывать по одному методу первого класса.
-    //Эти методы не должны обрабатывать возможные ошибки, а просто пробрасывают полученную ошибку выше;
+
+    //Примечание: данный класс можно было-бы наследовать от первого, и переопределить методы(с условием не static)
+
+//    @Override
+//    public void firstExceptionMethod() throws ExportException {
+//        super.firstExceptionMethod();
+//    }
+
 
     public static void callFirstExceptionMethod() throws ExportException {
         FirstCheckedExceptionClass.firstExceptionMethod();
