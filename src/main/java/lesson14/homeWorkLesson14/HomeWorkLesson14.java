@@ -22,14 +22,13 @@ public class HomeWorkLesson14 {
     д). try-finally;
     (в каждой конструкции try должны быть вызовы 3х методов промежуточного класса с разными ошибками).
     */
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
 
         tryCatchFinallyMethod();
         tryCatchCatchFinallyMethod();
         tryCatchCatchCatchFinallyMethod();
         tryWithResourcesCatchFinallyMethod();
         tryFinallyMethod();
-
 
     }
 
@@ -74,7 +73,6 @@ public class HomeWorkLesson14 {
         } finally {
             System.out.println("в). Вывод этой строки в любом случае.");
         }
-
     }
 
     private static void tryWithResourcesCatchFinallyMethod() {
@@ -84,17 +82,18 @@ public class HomeWorkLesson14 {
              Scanner scanner = new Scanner(fileReader)) {
             if (scanner.hasNextLine()) {
                 try {
-                    CallExceptionMethodsClass.callFirstExceptionMethod();
                     CallExceptionMethodsClass.callSecondExceptionMethod();
+                    CallExceptionMethodsClass.callFirstExceptionMethod();
                     CallExceptionMethodsClass.callThirdExceptionMethod();
                 } catch (ExportException | FileAlreadyExistsException | ClosedByInterruptException e) {
                     System.out.println("г).Возможная(-ые) ошибка(-и) из всех трёх методов: " + e);
                 }
             }
         } catch (IOException ex) {
+            System.out.println("г).Возможная ошибка FileReader или Scanner: " + ex);
             ex.printStackTrace();
         } finally {
-            System.out.println("г). Вывод этой строки в любом случае.");
+            System.out.println("г). В этом методе finally для закрытия потоков выполнен неявно.");
         }
     }
 
@@ -112,8 +111,5 @@ public class HomeWorkLesson14 {
 
             }
         }
-
-
     }
-
 }
