@@ -22,13 +22,13 @@ public class HomeWorkLesson14 {
     д). try-finally;
     (в каждой конструкции try должны быть вызовы 3х методов промежуточного класса с разными ошибками).
     */
-    public static void main(String[] args) throws ClosedByInterruptException, FileAlreadyExistsException, ExportException {
+    public static void main(String[] args)  {
 
-//        tryCatchFinallyMethod();
-//        tryCatchCatchFinallyMethod();
-//        tryCatchCatchCatchFinallyMethod();
-//        tryWithResourcesCatchFinallyMethod();
-//        tryFinallyMethod();
+        tryCatchFinallyMethod();
+        tryCatchCatchFinallyMethod();
+        tryCatchCatchCatchFinallyMethod();
+        tryWithResourcesCatchFinallyMethod();
+        tryFinallyMethod();
 
 
     }
@@ -98,15 +98,19 @@ public class HomeWorkLesson14 {
         }
     }
 
-    private static void tryFinallyMethod() throws ExportException, FileAlreadyExistsException, ClosedByInterruptException {
+    private static void tryFinallyMethod() {
 
         try {
-            CallExceptionMethodsClass.callFirstExceptionMethod();
-            CallExceptionMethodsClass.callSecondExceptionMethod();
-            CallExceptionMethodsClass.callThirdExceptionMethod();
             throw new RuntimeException();
         } finally {
-            System.out.println("д). Вывод этой строки в любом случае.");
+            try {
+                CallExceptionMethodsClass.callThirdExceptionMethod();
+                CallExceptionMethodsClass.callFirstExceptionMethod();
+                CallExceptionMethodsClass.callSecondExceptionMethod();
+            } catch (ExportException | FileAlreadyExistsException | ClosedByInterruptException e) {
+                System.out.println("д).Возможная(-ые) ошибка(-и) из всех трёх методов: " + e);
+
+            }
         }
 
 
